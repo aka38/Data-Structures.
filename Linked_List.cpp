@@ -29,18 +29,18 @@ void Insert ( int x, int pos)
 void Delete (int pos)
 {
  
- node* temp = head ;
- if( pos == 1)
- 	head = temp -> next;
-  
-  node* temp1 = head;
- 
- for(int i=0;i< pos-2; i++)
-    temp = temp -> next;
- 
- temp1 = temp-> next; 
- temp -> next =temp1 -> next;
- delete temp1;
+	 node* temp = head ;
+	 if( pos == 1)
+		head = temp -> next;
+
+	  node* temp1 = head;
+
+	 for(int i=0;i< pos-2; i++)
+	    temp = temp -> next;
+
+	 temp1 = temp-> next; 
+	 temp -> next =temp1 -> next;
+	 delete temp1;
 
 }
 void Print()
