@@ -77,11 +77,14 @@ void Print()
 }
 int main()
 {
- /*
-	Insert(1,1);
+        Insert(1,1);
 	Insert(2,1);
+	Insert(3,1);
+	Insert(4,1);
 	Print();
-	Delete(1);
- */
+        Delete(1);
+	node* head1= NULL;
+	head=Reverse(head);
+	Print();
 
 }
