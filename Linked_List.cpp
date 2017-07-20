@@ -14,10 +14,11 @@ void insert( int x, int pos)
 	node* temp = new node();  // for iteration
 	ele -> data = x;
 	ele -> next = NULL;
-	if(n==1)
+	if(pos == 1)
 	{
-	       temp -> next = head;
-	       head = temp;
+	       ele -> next = head;
+	       head = ele ;
+	    return ;
 	}
 	
 	for(int i=0;i<pos-2;i++)
@@ -38,8 +39,8 @@ void print()
 }
 int main()
 {
-insert(1);
-insert(2);
+//insert(1,1);
+//insert(2,1);
 print();
 
 }
