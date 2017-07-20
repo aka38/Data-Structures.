@@ -31,7 +31,11 @@ void Delete (int pos)
  
 	 node* temp = head ;
 	 if( pos == 1)
-		head = temp -> next;
+	 {
+		 head = temp -> next;
+		 delete temp;
+		 return ;
+	 }
 
 	  node* temp1 = head;
 
