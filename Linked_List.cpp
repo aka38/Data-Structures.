@@ -47,6 +47,23 @@ void Delete (int pos)
 	 delete temp1;
 
 }
+
+}
+node* Reverse( node* head)
+{
+	 node *current , *prev, *next ;
+	 current = head;
+	 prev=NULL;
+	 while(current!=NULL)
+	 {
+	 	next = current-> next;
+	 	current -> next= prev;
+	 	prev = current ;
+	 	current = next ;
+	 }
+	 head = prev;
+	 return head;
+}
 void Print()
 {
 	node* temp = head;
